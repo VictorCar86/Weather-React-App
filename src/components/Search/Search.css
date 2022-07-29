@@ -1,0 +1,12 @@
+.css-b62m3t-container {
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+#react-select-3-listbox.css-26l3qy-menu {
+    width: 90%;
+    top: 55px;
+    z-index: 2;
+}
