@@ -1,7 +1,3 @@
-# platzi-conf-store-merch
-
-Empty project.
-
 ## Building and running on localhost
 
 First install dependencies:
@@ -31,7 +27,3 @@ npm run build-dev
 ## Running
 
 Open the file `dist/index.html` in your browser
-
-## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
