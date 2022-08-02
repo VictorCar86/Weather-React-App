@@ -144,6 +144,7 @@
         grid-area: week_info;
         padding: 0;
         align-self: center;
+        z-index: 0;
     }
     .forecast-container__fc-item-container {
         width: 90%;
