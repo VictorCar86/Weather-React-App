@@ -20,6 +20,7 @@
     "react-accessible-accordion": "^5.0.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-leaflet-location-picker": "^1.4.2",
     "react-select-async-paginate": "^0.6.2"
   },
   "devDependencies": {

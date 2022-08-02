@@ -2,6 +2,7 @@ import React from "react";
 import "./Weather.css";
 
 const Weather = ({ weatherData, mainData = weatherData.data }) => {
+  if (weatherData.city === " undefined") weatherData.city = "Unregistered Place"
   return (
     <section className="weather-container">
       <span className="weather-container__cityname">{weatherData.city}</span>

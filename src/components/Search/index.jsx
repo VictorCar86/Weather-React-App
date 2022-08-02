@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { AsyncPaginate } from "react-select-async-paginate"
 import { GEO_URL, OPT_GEO_API } from "../../infoApi";
 import "./Search.css"
@@ -9,12 +9,12 @@ const Search = ({ onSearchChange }) => {
 
     const loadOptions = (inputValue) => {
 
-        const options = {
+        const axiosOptions = {
             namePrefix: inputValue,
             minPopulation: 1000000
         }
 
-        return axios.request(OPT_GEO_API(GEO_URL, options))
+        return axios.request(OPT_GEO_API(GEO_URL, axiosOptions))
             .then(function (response) {
                 console.log(response.data)
                 return {
@@ -35,6 +35,13 @@ const Search = ({ onSearchChange }) => {
         setState(searchData)
         onSearchChange(searchData)
     }
+
+    useEffect(() => {
+        handleOnChange({
+            label: "London GB",
+            value: "51.507222222 -0.1275"
+        })
+    },[])
 
   return (
     <AsyncPaginate

@@ -1,0 +1,16 @@
+.some-margin {
+    display: none;
+}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+    margin: 30px 45px 0;
+}
+@media (max-width: 500px) {
+    .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+        margin: 30px 25px 0;
+    }
+}
+@media (min-width: 850px) {
+    .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+        margin: 0 25px;
+    }
+}

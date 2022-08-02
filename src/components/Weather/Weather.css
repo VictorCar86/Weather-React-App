@@ -85,5 +85,12 @@
 @media (min-width: 850px) {
     .weather-container {
         margin: 75px 25px 0;
+        grid-area: main_info;
+    }
+}
+
+@media (min-width: 1050px) {
+    .weather-container {
+        margin: 75px 100px 0;
     }
 }

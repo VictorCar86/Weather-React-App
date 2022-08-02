@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import "./App.css"
 import Search from './components/Search'
 import Weather from './components/Weather'
 import { WEATHER_KEY, WEATHER_URL } from './infoApi'
 import Forecast from './components/Forecast'
+import MapPicker from './components/MapPicker'
 
 const App = () => {
   const [weather, setWeather] = useState(null)
   const [forecast, setForecast] = useState(null)
+  console.log(weather, forecast)
 
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ")
@@ -21,12 +23,28 @@ const App = () => {
         const weatherResponse = response[0]
         const forecastResponse = response[1]
 
+        if (searchData.label === undefined){
+          searchData.label = `${weatherResponse.data.name} ${weatherResponse.data.sys.country}`
+        }
+
         setWeather({ city: searchData.label, ...weatherResponse })
         setForecast({ city: searchData.label, ...forecastResponse })
 
       })
       .catch(err => console.log(err))
   }
+
+  useEffect(() => {
+    let coordinates = "";
+    navigator.geolocation.getCurrentPosition(data => {
+      coordinates = {
+        label: undefined,
+        value: `${data.coords.latitude} ${data.coords.longitude}`
+      }
+      handleOnSearchChange(coordinates)
+    },
+    console.log("Petition Rejected"))
+  }, [])
 
   return (
     <>
@@ -38,6 +56,9 @@ const App = () => {
       <main className='main'>
         {weather &&
           <Weather weatherData={weather}/>
+        }
+        {weather &&
+          <MapPicker onSearchChange={handleOnSearchChange} weather={weather}/>
         }
         {forecast &&
           <Forecast forecastData={forecast}/>

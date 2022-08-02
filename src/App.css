@@ -40,5 +40,8 @@
         grid-template-columns: auto minmax(115px, 600px);
         max-width: 1150px;
         justify-self: center;
+        grid-template-areas:
+            "main_info week_info"
+            "map week_info";
     }
 }
