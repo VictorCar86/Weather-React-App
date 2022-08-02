@@ -6,6 +6,9 @@
   "keywords": [],
   "author": "VictorCar86 - vmanuelcar@hotmail.com",
   "license": "MIT",
+  "engines": {
+    "node": "16.14.2"
+  },
   "scripts": {
     "build-dev": "webpack --mode development",
     "build": "webpack --mode production",
