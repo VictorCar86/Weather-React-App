@@ -40,6 +40,12 @@ Check the weather for the next week at the Daily section!!
 
 [Rapid API - Geodb](https://rapidapi.com/wirefreethought/api/geodb-cities/)
 
+## Tools used:
+- React - <img src="https://skills.thijs.gg/icons?i=react" width="18px">
+- Vanilla CSS - <img src="https://skills.thijs.gg/icons?i=css" width="18px">
+- HTML - <img src="https://skills.thijs.gg/icons?i=html" width="18px">
+- Webpack - <img src="https://skills.thijs.gg/icons?i=webpack" width="18px">
+
 ## Building and running on localhost
 
 First install dependencies:
