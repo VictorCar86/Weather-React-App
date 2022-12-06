@@ -1,12 +1,50 @@
 # ☀ Weather App made with React
 
-🌦 Search for the weather of a specific place, the city you live or any location you want to confirm whether it's going to rain or sunny.
+### 🌦 Find a location
+Search for the weather of a specific place, the city you live or any location you want to confirm whether it's going to rain or sunny.
+
+<img src="https://user-images.githubusercontent.com/96636507/182512649-a020da2f-4a40-4eba-a922-b8ad70b8b365.png" width="800px">
+
+#
+
+### Check it online 👇
+
+🔗 [Wheather-React-App](https://weather-app-withreact.herokuapp.com/)
+
+#
+
+### 📖 Choose a recomendation
+Filter by the name of a city, mostly to find a great match in case you don't remember it exactly
+
+![image](https://user-images.githubusercontent.com/96636507/182513874-0944abc5-fa2a-403f-9d67-e330af7e5a1e.png)
+
+#
+
+### 🗺 Click wherever you like
+If you prefer you can select a location directly from the map, just tap or click where you desire
+
+![image](https://user-images.githubusercontent.com/96636507/182513364-64ecde4c-32cb-48cb-951b-186ed2ff9d37.png)
+
+#
+
+### 📅 Week report
+Check the weather for the next week at the Daily section!!
+
+![image](https://user-images.githubusercontent.com/96636507/182513074-a26cf8ad-ff41-4c63-87e6-57b77fb988e0.png)
+
+#
 
 ### I've used two APIs for this project, both were OpenWeatherAPI and GeoDB Cities from Rapid API.
 
-OpenWeatherAPI: https://openweathermap.org/api
+[OpenWeather API](https://openweathermap.org/api)
 
-Rapid API: https://rapidapi.com/wirefreethought/api/geodb-cities/
+[Rapid API - Geodb](https://rapidapi.com/wirefreethought/api/geodb-cities/)
+
+## Tools used:
+- React - <img src="https://skills.thijs.gg/icons?i=react" width="18px">
+- Vanilla CSS - <img src="https://skills.thijs.gg/icons?i=css" width="18px">
+- HTML - <img src="https://skills.thijs.gg/icons?i=html" width="18px">
+- Webpack - <img src="https://skills.thijs.gg/icons?i=webpack" width="18px">
 
 ## Building and running on localhost
 
@@ -38,6 +76,6 @@ npm run build-dev
 
 Open the file `dist/index.html` in your browser
 
-## Check it online
+### Check it online 👇
 
-👉 https://weather-app-withreact.herokuapp.com/
+🔗 [Wheather-React-App](https://weather-app-withreact.herokuapp.com/)
