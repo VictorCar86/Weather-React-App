@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build-dev": "webpack --mode development",
-    "build": "webpack --mode production",
+    "build": "npm config set legacy-peer-deps true && webpack --mode production",
     "start": "node server.js",
     "start-dev": "webpack serve --mode development",
     "start-prod": "webpack serve --mode production"
