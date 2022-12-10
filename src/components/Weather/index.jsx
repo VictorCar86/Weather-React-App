@@ -2,7 +2,7 @@ import React from "react";
 import "./Weather.css";
 
 const Weather = ({ weatherData, mainData = weatherData.data }) => {
-  if (weatherData.city === " undefined") weatherData.city = "Unregistered Place"
+  if (weatherData.city.includes("undefined")) weatherData.city = "Unregistered Place"
   return (
     <section className="weather-container">
       <span className="weather-container__cityname">{weatherData.city}</span>
@@ -41,7 +41,5 @@ const Weather = ({ weatherData, mainData = weatherData.data }) => {
     </section>
   );
 };
-
-// https://brands.home-assistant.io/_/weather/logo.png
 
 export default Weather;

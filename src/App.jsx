@@ -10,7 +10,7 @@ import MapPicker from './components/MapPicker'
 const App = () => {
   const [weather, setWeather] = useState(null)
   const [forecast, setForecast] = useState(null)
-  console.log(weather, forecast)
+  // console.log(weather, forecast)
 
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ")
