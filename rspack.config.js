@@ -1,6 +1,5 @@
 const path = require('path');
-const HTMLWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { rspack } = require("@rspack/core");
 const Dotenv = require("dotenv-webpack");
 
 module.exports = {
@@ -12,23 +11,24 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx"],
-    // fallback: {
-    //   "path": require.resolve("path-browserify"),
-    //   "fs": false,
-    // },
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+              presets: ["@babel/preset-env", "@babel/preset-react"],
+          },
+        },
         exclude: /node_modules/
       },
       {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: rspack.CssExtractRspackPlugin.loader
           },
           'css-loader',
         ]
@@ -49,13 +49,12 @@ module.exports = {
     ]
   },
   plugins: [
-    new HTMLWebpackPlugin({
+    new rspack.HtmlRspackPlugin({
       template: "./public/index.html",
-      filename: "index.html"
+      filename: "index.html",
+      favicon: "./public/favicon.ico",
     }),
-    new MiniCssExtractPlugin({
-      filename: "assets/style/[name].css"
-    }),
+    new rspack.CssExtractRspackPlugin(),
     new Dotenv({
       path: "./.env",
       systemvars: true,
@@ -67,7 +66,6 @@ module.exports = {
     },
     historyApiFallback: true,
     compress: true,
-    port: 3005,
-    open: true
+    port: 3005
   }
 };
