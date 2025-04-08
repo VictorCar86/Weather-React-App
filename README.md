@@ -1,6 +1,6 @@
 # ☀ Weather App made with React
 
-### 🌦 Find a location
+### 📍 Find a location
 Search for the weather of a specific place, the city you live or any location you want to confirm whether it's going to rain or sunny.
 
 <img src="https://user-images.githubusercontent.com/96636507/182512649-a020da2f-4a40-4eba-a922-b8ad70b8b365.png" width="800px">
@@ -9,7 +9,7 @@ Search for the weather of a specific place, the city you live or any location yo
 
 ### Check it online 👇
 
-🔗 [Wheather-React-App](https://weather-app-withreact.herokuapp.com/)
+🔗 [Wheather-React-App](https://geo-weather-react.netlify.app/)
 
 #
 
@@ -36,15 +36,15 @@ Check the weather for the next week at the Daily section!!
 
 ### I've used two APIs for this project, both were OpenWeatherAPI and GeoDB Cities from Rapid API.
 
-[OpenWeather API](https://openweathermap.org/api)
+🌦 [OpenWeather API](https://openweathermap.org/api)
 
-[Rapid API - Geodb](https://rapidapi.com/wirefreethought/api/geodb-cities/)
+🗺️ [Rapid API - Geodb](https://rapidapi.com/wirefreethought/api/geodb-cities/)
 
 ## Tools used:
-- React - <img src="https://skills.thijs.gg/icons?i=react" width="18px">
-- Vanilla CSS - <img src="https://skills.thijs.gg/icons?i=css" width="18px">
-- HTML - <img src="https://skills.thijs.gg/icons?i=html" width="18px">
-- Webpack - <img src="https://skills.thijs.gg/icons?i=webpack" width="18px">
+- React - <img src="https://skillicons.dev/icons?i=react" width="18px">
+- Vanilla CSS - <img src="https://skillicons.dev/icons?i=css" width="18px">
+- HTML - <img src="https://skillicons.dev/icons?i=html" width="18px">
+- Webpack - <img src="https://skillicons.dev/icons?i=webpack" width="18px">
 
 ## Building and running on localhost
 
